@@ -1,0 +1,53 @@
+node_modules
+
+# Output
+.output
+.vercel
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+
+
+# Ignore virtual environments
+/venv
+
+# Ignore Python byte code cache
+*.pyc
+__pycache__
+.cache
+
+# Ignore coverage reports
+.coverage
+reports/
+
+# Ignore build results
+*.egg-info/
+pip-wheel-metadata/
+dist/
+
+# Ignore stupid .DS_Store
+.DS_Store
+
+# Ignore benchmark results
+.benchmarks/
+
+# Ignore temporary tox environments
+.tox/
+.pytest_cache/
+
+# Ignore PyCharm / IntelliJ files
+.idea/
