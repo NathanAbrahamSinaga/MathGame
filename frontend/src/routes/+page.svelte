@@ -25,9 +25,9 @@
     });
   
     function initAudio() {
-      introAudio = new Audio('/intro-music.mp3');
-      gameAudio = new Audio('/game-music.mp3');
-      endAudio = new Audio('/end-music.mp3');
+      introAudio = new Audio('../audio/intro-music.mp3');
+      gameAudio = new Audio('../audio/game-music.mp3');
+      endAudio = new Audio('../audio/end-music.mp3');
       introAudio.loop = true;
       gameAudio.loop = true;
       introAudio.play().catch(error => console.error('Audio playback failed:', error));
@@ -49,7 +49,7 @@
       gameStarted = true;
       gameEnded = false;
       score = 0;
-      timeLeft = 60;
+      timeLeft = 90;
       nextQuestion();
       timer = setInterval(() => {
         timeLeft--;
